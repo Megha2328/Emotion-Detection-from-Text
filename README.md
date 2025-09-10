@@ -1,4 +1,5 @@
 📌 Emotion Detection from Text
+
 📖 Project Overview
 
 This project focuses on detecting emotions expressed in text data using Natural Language Processing (NLP) and Machine Learning techniques. The dataset contains sentences labeled with emotions such as anger, fear, joy, love, sadness, and surprise.
@@ -19,6 +20,7 @@ The notebook demonstrates the complete pipeline:
 
   > Features:
     a. content → text message/tweet
+
     b. sentiment → emotion label (anger, fear, joy, love, sadness, surprise)
 
   > The dataset is used to train and test the emotion detection model.
@@ -26,26 +28,39 @@ The notebook demonstrates the complete pipeline:
 🔧 Methodology
 
 1. Data Exploration
+   
   a. Checked dataset size, info, class distribution.
+
   b. Visualized sentiment counts with Seaborn.
 
-2. Text Preprocessing
+3. Text Preprocessing
+   
   a. Removed punctuations and numbers.
+  
   b. Tokenized text into words.
+  
   c. Removed stopwords (extended with domain-specific words).
+  
   d. Lemmatized tokens using WordNet Lemmatizer.
 
-3. Feature Extraction
+5. Feature Extraction
+   
   a. Count Vectorizer → converts text into a word-count matrix.
+  
   b. TF-IDF Vectorizer → assigns importance weights to words.
 
-4. Model Training
+7. Model Training
+   
   a.Used XGBoost Classifier with tuned parameters (max_depth=16, n_estimators=1000).
+  
   b.Encoded target labels using LabelEncoder.
 
-5. Evaluation
+9. Evaluation
+    
   a. Accuracy, Precision, Recall, F1-score (macro average).
+  
   b. Confusion Matrix.
+  
   c. Classification Report with all emotion classes.
 
 ✅ Results
