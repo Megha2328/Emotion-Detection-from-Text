@@ -16,14 +16,15 @@ The notebook demonstrates the complete pipeline:
 
 📊 Dataset
 
-  > File: text_emotions.csv
+  1. File: text_emotions.csv
 
-  > Features:
+  2. Features:
+
         a. content → text message/tweet
 
         b. sentiment → emotion label (anger, fear, joy, love, sadness, surprise)
 
-  > The dataset is used to train and test the emotion detection model.
+  3. The dataset is used to train and test the emotion detection model.
 
 🔧 Methodology
 
@@ -33,35 +34,35 @@ The notebook demonstrates the complete pipeline:
 
       b. Visualized sentiment counts with Seaborn.
 
-3. Text Preprocessing
+2. Text Preprocessing
    
-  a. Removed punctuations and numbers.
+      a. Removed punctuations and numbers.
   
-  b. Tokenized text into words.
+      b. Tokenized text into words.
   
-  c. Removed stopwords (extended with domain-specific words).
+      c. Removed stopwords (extended with domain-specific words).
   
-  d. Lemmatized tokens using WordNet Lemmatizer.
+      d. Lemmatized tokens using WordNet Lemmatizer.
 
-5. Feature Extraction
+3. Feature Extraction
    
-  a. Count Vectorizer → converts text into a word-count matrix.
+      a. Count Vectorizer → converts text into a word-count matrix.
   
-  b. TF-IDF Vectorizer → assigns importance weights to words.
+      b. TF-IDF Vectorizer → assigns importance weights to words.
 
-7. Model Training
+4. Model Training
    
-  a.Used XGBoost Classifier with tuned parameters (max_depth=16, n_estimators=1000).
+      a.Used XGBoost Classifier with tuned parameters (max_depth=16, n_estimators=1000).
   
-  b.Encoded target labels using LabelEncoder.
+      b.Encoded target labels using LabelEncoder.
 
-9. Evaluation
+5. Evaluation
     
-  a. Accuracy, Precision, Recall, F1-score (macro average).
+      a. Accuracy, Precision, Recall, F1-score (macro average).
   
-  b. Confusion Matrix.
+      b. Confusion Matrix.
   
-  c. Classification Report with all emotion classes.
+      c. Classification Report with all emotion classes.
 
 ✅ Results
 
