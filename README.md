@@ -19,9 +19,9 @@ The notebook demonstrates the complete pipeline:
   > File: text_emotions.csv
 
   > Features:
-    a. content → text message/tweet
+        a. content → text message/tweet
 
-    b. sentiment → emotion label (anger, fear, joy, love, sadness, surprise)
+        b. sentiment → emotion label (anger, fear, joy, love, sadness, surprise)
 
   > The dataset is used to train and test the emotion detection model.
 
@@ -29,9 +29,9 @@ The notebook demonstrates the complete pipeline:
 
 1. Data Exploration
    
-  a. Checked dataset size, info, class distribution.
+      a. Checked dataset size, info, class distribution.
 
-  b. Visualized sentiment counts with Seaborn.
+      b. Visualized sentiment counts with Seaborn.
 
 3. Text Preprocessing
    
