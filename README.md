@@ -5,63 +5,43 @@ This project focuses on detecting emotions expressed in text data using Natural 
 
 The notebook demonstrates the complete pipeline:
 
-Text preprocessing (cleaning, tokenization, stopword removal, lemmatization)
-
-Feature extraction using Count Vectorizer and TF-IDF
-
-Training an XGBoost Classifier
-
-Evaluating the model with accuracy, precision, recall, F1-score, and confusion matrix
+  a. Text preprocessing (cleaning, tokenization, stopword removal, lemmatization)
+  b. Feature extraction using Count Vectorizer and TF-IDF
+  c. Training an XGBoost Classifier
+  d. Evaluating the model with accuracy, precision, recall, F1-score, and confusion matrix
 
 📊 Dataset
 
-File: text_emotions.csv
-
-Features:
-
-content → text message/tweet
-
-sentiment → emotion label (anger, fear, joy, love, sadness, surprise)
-
-The dataset is used to train and test the emotion detection model.
+  > File: text_emotions.csv
+  > Features:
+    a. content → text message/tweet
+    b. sentiment → emotion label (anger, fear, joy, love, sadness, surprise)
+  > The dataset is used to train and test the emotion detection model.
 
 🔧 Methodology
 
 1. Data Exploration
-
-Checked dataset size, info, class distribution.
-
-Visualized sentiment counts with Seaborn.
+  a. Checked dataset size, info, class distribution.
+  b. Visualized sentiment counts with Seaborn.
 
 2. Text Preprocessing
-
-Removed punctuations and numbers.
-
-Tokenized text into words.
-
-Removed stopwords (extended with domain-specific words).
-
-Lemmatized tokens using WordNet Lemmatizer.
+  a. Removed punctuations and numbers.
+  b. Tokenized text into words.
+  c. Removed stopwords (extended with domain-specific words).
+  d. Lemmatized tokens using WordNet Lemmatizer.
 
 3. Feature Extraction
-
-Count Vectorizer → converts text into a word-count matrix.
-
-TF-IDF Vectorizer → assigns importance weights to words.
+  a. Count Vectorizer → converts text into a word-count matrix.
+  b. TF-IDF Vectorizer → assigns importance weights to words.
 
 4. Model Training
-
-Used XGBoost Classifier with tuned parameters (max_depth=16, n_estimators=1000).
-
-Encoded target labels using LabelEncoder.
+  a.Used XGBoost Classifier with tuned parameters (max_depth=16, n_estimators=1000).
+  b.Encoded target labels using LabelEncoder.
 
 5. Evaluation
-
-Accuracy, Precision, Recall, F1-score (macro average).
-
-Confusion Matrix.
-
-Classification Report with all emotion classes.
+  a. Accuracy, Precision, Recall, F1-score (macro average).
+  b. Confusion Matrix.
+  c. Classification Report with all emotion classes.
 
 ✅ Results
 
