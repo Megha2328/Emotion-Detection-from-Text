@@ -6,16 +6,21 @@ This project focuses on detecting emotions expressed in text data using Natural 
 The notebook demonstrates the complete pipeline:
 
   a. Text preprocessing (cleaning, tokenization, stopword removal, lemmatization)
+  
   b. Feature extraction using Count Vectorizer and TF-IDF
+  
   c. Training an XGBoost Classifier
+  
   d. Evaluating the model with accuracy, precision, recall, F1-score, and confusion matrix
 
 📊 Dataset
 
   > File: text_emotions.csv
+
   > Features:
     a. content → text message/tweet
     b. sentiment → emotion label (anger, fear, joy, love, sadness, surprise)
+
   > The dataset is used to train and test the emotion detection model.
 
 🔧 Methodology
