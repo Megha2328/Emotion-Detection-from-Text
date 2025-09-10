@@ -27,13 +27,13 @@ The dataset is used to train and test the emotion detection model.
 
 🔧 Methodology
 
-Data Exploration
+1. Data Exploration
 
 Checked dataset size, info, class distribution.
 
 Visualized sentiment counts with Seaborn.
 
-Text Preprocessing
+2. Text Preprocessing
 
 Removed punctuations and numbers.
 
@@ -43,19 +43,19 @@ Removed stopwords (extended with domain-specific words).
 
 Lemmatized tokens using WordNet Lemmatizer.
 
-Feature Extraction
+3. Feature Extraction
 
 Count Vectorizer → converts text into a word-count matrix.
 
 TF-IDF Vectorizer → assigns importance weights to words.
 
-Model Training
+4. Model Training
 
 Used XGBoost Classifier with tuned parameters (max_depth=16, n_estimators=1000).
 
 Encoded target labels using LabelEncoder.
 
-Evaluation
+5. Evaluation
 
 Accuracy, Precision, Recall, F1-score (macro average).
 
@@ -65,16 +65,16 @@ Classification Report with all emotion classes.
 
 ✅ Results
 
-The SVM model achieved strong performance across all metrics.
+1. The SVM model achieved strong performance across all metrics.
 
-Certain emotions like joy and sadness were classified with higher accuracy compared to others like fear and love.
+2. Certain emotions like joy and sadness were classified with higher accuracy compared to others like fear and love.
 
-TF-IDF features generally improved results over raw counts.
+3. TF-IDF features generally improved results over raw counts.
 
 🔮 Future Improvements
 
-Use deep learning models (LSTM, BERT, DistilBERT) for better context understanding.
+1. Use deep learning models (LSTM, BERT, DistilBERT) for better context understanding.
 
-Apply data augmentation to balance class distribution.
+2. Apply data augmentation to balance class distribution.
 
-Deploy the model as an API or web app for real-time emotion detection.
+3. Deploy the model as an API or web app for real-time emotion detection.
